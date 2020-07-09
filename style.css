@@ -30,6 +30,7 @@ p {
     background-color: black;
     margin: 20px 50px;
     gap: 5px;
+    user-select: none;
 }
 
 .item {
@@ -39,4 +40,13 @@ p {
     background-color: white;
     margin: 0;
     font-size: 5em;
+}
+
+.valid {
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.valid:hover {
+    background-color: rgb(200, 255, 200);
 }
