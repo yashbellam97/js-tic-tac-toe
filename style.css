@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.player-div {
+    display: inline-block;
+}
+
+.player-heading {
+    font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.player-score {
+    font-size: 5em;
+}
+
+#game-container {
+    display: inline-grid;
+    width: 500px;
+    height: 500px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    margin: 20px 50px;
+    gap: 5px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    font-size: 5em;
+}
