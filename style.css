@@ -3,12 +3,32 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    font-family: 'Merienda One', cursive;
+    font-size: 5em;
+}
+
 p {
     margin: 0;
 }
 
 .player-div {
     display: inline-block;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.current {
+    animation-name: currentPlayer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes currentPlayer {
+    50% {
+        background-color: rgb(100, 250, 100);
+        
+    }
 }
 
 .player-heading {
@@ -28,7 +48,7 @@ p {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     background-color: black;
-    margin: 20px 50px;
+    margin: 20px 200px;
     gap: 5px;
     user-select: none;
 }
@@ -39,7 +59,7 @@ p {
     align-items: center;
     background-color: white;
     margin: 0;
-    font-size: 5em;
+    font-size: 8em;
 }
 
 .valid {
@@ -48,5 +68,5 @@ p {
 }
 
 .valid:hover {
-    background-color: rgb(200, 255, 200);
+    background-color: rgb(200, 200, 255);
 }
